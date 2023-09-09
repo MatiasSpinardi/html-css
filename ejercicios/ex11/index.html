@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias en html5</title>
+</head>
+<body>
+    <h1>Imagenes dinamicas</h1>
+    <p>Intentar abrir imagen en distintos dispositivos o o achicando tamaño de la pantalla.</p>
+    <picture> 
+        <source media="(max-width:750px)" srcset="imagenes/fondo-p.png">
+      <source media="(max-width: 1050px)" srcset="imagenes/fondo-m.png">
+      <img src="imagenes/fondo-g.png" alt="Imagen flexible">  
+    </picture>
+
+    <h1>Reproduciendo audios</h1>
+    <p>Vamos a aprender a reproducir audios en HTML5 </p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/tango-de-la-noche.mp3" type="audio/mpeg">
+        <source src="media/tango-de-la-noche.mp3" type="audio/ogg">
+        <source src="media/tango-de-la-noche.mp3" type="audio/wav">
+    </audio>
+    <p>Infelizmente tu navegador no puede reproducir audio <a href="media/tango-de-la-noche.mp3">Click para descarga de archivo mp3</a></p>
+</body>
+</html>
