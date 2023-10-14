@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid rgb(6, 1, 66); 
+            padding: 8px;
+            text-align: center;/*alineamiento horizontal*/
+            vertical-align: middle;/* Alineamiento Vertical*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Mi primer tabla</h1>
+    <!-- 
+        jerarquia de tablas (simples)
+        Table = tabla
+            Table row = Linea de tablas
+                Table header = Enzabezado de tabla  
+            Table data = Casilla de tabla
+    -->
+
+    <table>
+         <tr> <!--Primera linea-->
+            <td>a1</td>
+            <td>a2</td>
+            <td>a3</td>
+        </tr>
+        <tr class="linea"> <!--Segunda linea-->
+            <td>b1</td>
+            <td>b2</td>
+            <td>b3</td>
+        </tr>
+        <tr><!--tercera linea-->
+            <td>a3</td>
+            <td>b2</td>
+            <td>c3</td>
+        </tr>
+        <tr> <!--cuarta linea-->
+            <td class="dado">a1</td>
+            <td>b2</td>
+            <td>c3</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
