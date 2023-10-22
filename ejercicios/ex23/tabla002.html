@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia para tablas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid rgb(12, 4, 122);
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color:aliceblue
+        }
+       tfoot{
+        background-color: gray;
+            color:aliceblue
+       }
+
+       tbody > tr:nth-child(odd)/*2n-1 // IMPAR*/{
+        background-color: aquamarine;
+       }
+
+       tbody > tr:nth-child(even) /*2n // Par*/{
+        background-color: burlywood;
+       }
+
+       td.num {
+        text-align: right;
+       }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Uso de tablas grandes</h1>
+    <!--
+        Anatomia de tablas grandes
+        Table
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>Titulo caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">Unidad federativa</th>
+                <th scope="col" style="width: 100px;">populacion</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            </tr>
+                <td>San Pablo</td>
+                <td>45 919 049</td>
+            <tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td>21 343 243</td>
+            </tr>
+            <tr>
+                <td>Rio Janiro</td>
+                <td>21 258 332</td>
+            </tr>
+            <tr>
+                <td>Rio Janiro</td>
+                <td>21 258 332</td>
+            </tr>
+            <tr>
+                <td>Rio Janiro</td>
+                <td>21 258 332</td>
+            </tr>
+            <tr>
+                <td>Rio Janiro</td>
+                <td>21 258 332</td>
+            </tr>
+            <tr>
+                <td>Rio Janiro</td>
+                <td>21 258 332</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="col">Total hab.</th>
+                <th scope="col">0000</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
